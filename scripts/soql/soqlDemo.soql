@@ -1,0 +1,11 @@
+select id, name FROM Account
+// ii will fetch last three created accunts in descendent order
+select id, name, createdDate from account Order by createdDate desc limit 3
+
+
+select id, name, phone from account where phone!= null
+
+SELECT Name, Id, phone,accountnumber, active__c, shippingcity from account where phone != null and accountnumber != null
+
+/*brackets are mandatory when you use multiple conditions like AND or OR */
+
